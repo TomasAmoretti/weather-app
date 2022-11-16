@@ -3,3 +3,11 @@
     place-content: center;
     padding: 1em;
 }
+
+#cityPicker select {
+    padding: 7px 15px;
+    font-size: 15px;
+    background: transparent;
+    border: solid 1px #fff;
+    border-radius: 8px;
+}

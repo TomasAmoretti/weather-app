@@ -1,6 +1,5 @@
 #showWeather {
     min-width: 200px;
-    border: 0.2em solid black;
     padding: 0.5em;
 }
 
@@ -13,15 +12,20 @@
 #showWeather ul {
     padding-top: 1em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
-    gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3em;
+    padding-left: 0;
 }
 
 
 #showWeather ul li {
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 20px;
+    background: #ffffff54;
+    box-shadow: 1px 1px 5px 0px #000;
 }
 
 
@@ -40,4 +44,16 @@
 
 #showWeather #max {
     color: red;
+}
+
+@media screen and (max-width: 1024px) {
+    #showWeather ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #showWeather ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

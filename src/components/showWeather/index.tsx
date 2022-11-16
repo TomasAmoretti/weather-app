@@ -8,7 +8,7 @@ type Props = {
 export default function showWeather({ weather: { city, forecast } }: Props) {
 
     return <div id="showWeather">
-        <p>{city.name}</p>
+        <h2 id="city-name">{city.name}</h2>
         <ul>
             {forecast.map((forecast, index) => (
                 <li key={index}>
